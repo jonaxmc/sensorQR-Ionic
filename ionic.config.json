@@ -1,0 +1,7 @@
+{
+  "name": "sensorQR",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

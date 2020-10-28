@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      HISTORIAL
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item *ngFor="let registro of dataLocal.guardados" (click)="abrirRegistro(registro)" detail>
+    <ion-icon slot="start" [name]="registro.icon" color="primary"></ion-icon>
+    <ion-label>
+      <h2>{{registro.text}}</h2>
+      <p>{{registro.created | date:"medium"}}</p>
+    </ion-label>
+  </ion-item>
+  
+</ion-content>
